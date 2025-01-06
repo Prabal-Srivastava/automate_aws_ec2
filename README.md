@@ -21,17 +21,17 @@ This repository contains a Python script that uses the Boto3 library to interact
     region_name="ap-south-1",
     aws_access_key_id="YOUR_AWS_ACCESS_KEY_ID",
     aws_secret_access_key="YOUR_AWS_SECRET_ACCESS_KEY"
-)
+    )
 
 # Define a function to launch an EC2 instance
    def ec2_launch():
-    myec2 = ec2.create_instances(
-        InstanceType="t2.micro",
-        ImageId="ami-0fd05997b4dff7aac",
-        MinCount=1,
-        MaxCount=1
-    )
-    return myec2
+   myec2 = ec2.create_instances(
+      InstanceType="t2.micro",
+      ImageId="ami-0fd05997b4dff7aac",
+      MinCount=1,
+      MaxCount=1
+      )
+      return myec2
 
 
 # Initialize an empty list to store instance IDs
